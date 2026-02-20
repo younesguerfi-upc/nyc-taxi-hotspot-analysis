@@ -88,3 +88,7 @@ nyc-taxi-hotspot-analysis/
 ```bash
 cd dashboard
 streamlit run app.py
+pip install -r requirementx.txt
+
+**or using Docker**
+docker compose up
