@@ -20,30 +20,24 @@ The goal is to help operators and analysts understand high-demand areas and peak
 ##  Project Structure
 nyc-taxi-hotspot-analysis/
 │
-├── data/
-│ ├── raw/ # original dataset (not included in repo)
-│ └── processed/ # preprocessed parquet files
+├── data/                  
+│   └── preprocessed_taxi/  # processed parquet files for dashboard
 │
-├── notebooks/ # exploratory analysis notebooks
+├── model/
+│   └── clf.pkl             # trained ML model
 │
-├── src/
-│ ├── preprocessing/ # scripts to clean and preprocess data
-│ ├── aggregation/ # scripts to compute zone/time aggregations
-│ └── modeling/ # ML model training scripts
+├── dashboard/              # Streamlit app folder
+│   └── app.py              # main Streamlit dashboard
 │
-├── dashboard/
-│ ├── app.py # Streamlit application
-│ ├── model/ # trained ML model (.pkl)
-│ └── data/ # preprocessed data for dashboard
+├── docker/                 # Docker files (optional)
+│   ├── Dockerfile
+│   └── docker-compose.yml
 │
-├── docker/
-│ ├── Dockerfile
-│ └── docker-compose.yml
+├── notebooks/              # Jupyter notebooks for exploration (optional)
 │
-├── requirements.txt
-├── README.md
-└── .gitignore
-
+├── requirements.txt        # all Python dependencies
+├── README.md               # project description
+└── .gitignore              # ignore unnecessary files
 
 ---
 
